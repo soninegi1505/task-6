@@ -1,0 +1,29 @@
+// javascript prototype method name befindobject, which finds a specific object from array 
+of objects, it should extend array prototype. 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript method array</title>
+</head>
+<body>
+<script type="text/javascript">
+	Array.prototype.beFindObject = function(property) {
+		var arr =[];
+		this.forEach((item) => {
+			arr.push(item[property]);
+
+			});
+		return arr;
+		};
+		var input = [{name:"mahesh",age:27},{name:"sumesh",age:28}];
+		document.write(input.beFindObject('name'));
+		document.write("\n ");
+		document.write(input.beFindObject('age'));
+
+	
+</script>
+
+</body>
+</html>
